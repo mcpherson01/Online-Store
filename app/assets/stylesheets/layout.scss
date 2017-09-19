@@ -1,0 +1,13 @@
+// Custom layout styles
+// Default font family
+@font-face {
+  font-family: 'gotham-rounded';
+  src: url(gotham-rounded-medium.otf);
+}
+// Body background
+body {
+  background-image: url(body_bg.png);
+  background-position: center;
+  color: #fff;
+}
+
