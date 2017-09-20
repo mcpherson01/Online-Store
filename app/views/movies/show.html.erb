@@ -30,5 +30,22 @@
   <%= @movie.poster_url %>
 </p>
 
+<div class="large-3 small-12 column">
+  <%=image_tag @movie.poster%>
+</div>
+
+<div class="large-9 small-12 column">
+  <h3>
+    <%= @movie.title %>
+    (<%= @movie.release_year %>)
+    <%=link_to @movie.imdb do%>
+      <%=image_tag asset_path("imdb_logo.png")%>
+    <%end%>
+  </h3>
+  <p class="label movie-label radius mb1">$ <%= @movie.price %></p>
+
+  <p><%= @movie.description %></p>
+</div>
+
 <%= link_to 'Edit', edit_movie_path(@movie) %> |
 <%= link_to 'Back', movies_path %>
